@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
+---
+<Layout
+  title="Remote — TV remote for iPhone and iPad"
+  description="A local TV remote for iPhone and iPad. Set up an LG webOS or Samsung Tizen TV, share access by QR, and choose your shortcuts. Requires iOS 26 or later."
+  applicationSchema
+>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-content">
+    <p class="eyebrow">For iPhone &amp; iPad</p>
+    <h1 id="hero-title">Your TV remote.<br /><span>On iPhone and iPad.</span></h1>
+    <p class="hero-copy">Control a compatible LG or Samsung TV over Wi-Fi. Share its setup by QR and choose shortcuts for the buttons you use most.</p>
+    <div class="hero-links">
+      <a class="button" href="#features">Take a look <span aria-hidden="true">↓</span></a>
+      <a href="#compatibility">Will it work with my TV?</a>
+    </div>
+    <p class="availability">Not yet available on the App Store. No release date has been announced.</p>
+    </div>
+    <figure class="hero-screen">
+      <img src={`${base}images/remote.png`} width="1320" height="2868" alt="Remote’s TV controls with a directional pad, volume, playback, and assigned shortcuts." fetchpriority="high" decoding="async" />
+      <figcaption>Everyday controls, together.</figcaption>
+    </figure>
+  </section>
+
+  <section id="features" class="features" aria-labelledby="features-title">
+    <div class="section-heading">
+      <p class="eyebrow">Setup, sharing, and shortcuts</p>
+      <h2 id="features-title">Set up. Share. Make it yours.</h2>
+    </div>
+    <div class="feature-grid">
+      <article class="feature">
+        <div class="feature-copy">
+          <span class="feature-number" aria-hidden="true">01</span>
+          <h3>A simple start.</h3>
+          <p>Join your TV’s local network, allow Local Network access, and find your TV. Approve the first pairing on the TV.</p>
+        </div>
+        <figure>
+          <img src={`${base}images/setup.png`} width="1320" height="2868" alt="Remote’s Add a TV screen with options to find nearby TVs or scan a QR code." loading="lazy" decoding="async" />
+          <figcaption>Find a TV on your network.</figcaption>
+        </figure>
+      </article>
+      <article class="feature">
+        <div class="feature-copy">
+          <span class="feature-number" aria-hidden="true">02</span>
+          <h3>Pass the remote.</h3>
+          <p>Share a saved setup by QR with someone you trust. They can scan it or import the image. The TV may still ask for approval.</p>
+        </div>
+        <figure>
+          <img src={`${base}images/sharing.png`} width="1320" height="2868" alt="Remote’s Scan QR Code screen with camera and saved-image import options." loading="lazy" decoding="async" />
+          <figcaption>A shared setup, without an account.</figcaption>
+        </figure>
+      </article>
+      <article class="feature">
+        <div class="feature-copy">
+          <span class="feature-number" aria-hidden="true">03</span>
+          <h3>Your usual buttons.</h3>
+          <p>Six shortcut slots for each TV. Pick apps, controls, or volume presets where supported. Choose button names and haptics, too.</p>
+        </div>
+        <figure>
+          <img src={`${base}images/customize.png`} width="1320" height="2868" alt="Remote’s shortcut editor with choices for a TV’s shortcut slots." loading="lazy" decoding="async" />
+          <figcaption>Choose apps, controls, or volume presets.</figcaption>
+        </figure>
+      </article>
+    </div>
+    <p class="screenshot-note">Simulator screenshots with sample TVs.</p>
+  </section>
+
+  <section id="compatibility" class="details-section" aria-labelledby="compatibility-title">
+    <div>
+      <p class="eyebrow">Before you begin</p>
+      <h2 id="compatibility-title">Local by design.</h2>
+      <p>Remote talks directly to your TV. No account, cloud relay, or home server is needed.</p>
+      <figure class="library-screen">
+        <img src={`${base}images/library.png`} width="1320" height="2868" alt="Remote’s TV library showing several sample TV cards and an Add a TV option." loading="lazy" decoding="async" />
+        <figcaption>A place for each TV.</figcaption>
+      </figure>
+    </div>
+    <dl class="requirements">
+      <div><dt>Your device</dt><dd>iPhone with iOS 26 or later, or iPad with iPadOS 26 or later.</dd></div>
+      <div><dt>Your TV</dt><dd>LG webOS or Samsung Tizen. Compatibility and available controls vary by model and firmware; not every TV has been verified.</dd></div>
+      <div><dt>Your network</dt><dd>Your device and TV must be on the same local network. Your device uses Wi-Fi; the TV can use Wi-Fi or Ethernet. Allow Local Network access and approve initial pairing on the TV.</dd></div>
+    </dl>
+  </section>
+
+  <aside class="privacy-note" aria-labelledby="sharing-title">
+    <h2 id="sharing-title">Share a QR like you would share a key.</h2>
+    <p>A setup QR can contain reusable TV authorization. It is not encrypted. Anyone with a copy may control that TV from its network, so share only with trusted people. Deleting a saved remote does not revoke a shared copy.</p>
+    <a href={`${base}privacy/`}>How Remote handles your data <span aria-hidden="true">→</span></a>
+  </aside>
+
+  <section class="closing" aria-labelledby="help-title">
+    <h2 id="help-title">Need a hand?</h2>
+    <p>Start with the basics: your network, TV approval, and device permissions.</p>
+    <a href={`${base}support/`}>Setup help &amp; support <span aria-hidden="true">→</span></a>
+  </section>
+</Layout>
