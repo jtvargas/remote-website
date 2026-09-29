@@ -40,7 +40,7 @@ The shared layout provides unique titles/descriptions, canonical URLs, Open Grap
 
 ## Public artwork
 
-`public/favicon.svg` is a simple letterform. `public/social.png` is a 1200 × 630 typography-only social card; no TV identifiers or access material are present.
+`public/favicon.png` is a 64 × 64 PNG resized directly from the iOS app’s `AppIcon.png`, preserving the same artwork. `public/social.png` is a 1200 × 630 typography-only social card; no TV identifiers or access material are present.
 
 The homepage expects these **1320 × 2868** PNGs in `public/images/`:
 
