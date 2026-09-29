@@ -1,4 +1,4 @@
-# Remote website
+# URemote website
 
 The public, static website for Remote, a local TV remote for iPhone and iPad. This repository contains only website code and approved public artwork. The iOS app source remains in its separate private repository.
 
