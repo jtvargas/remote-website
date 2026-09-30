@@ -15,7 +15,8 @@ const image = new URL(`${base}social.png`, Astro.site).href;
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
-  name: 'Remote',
+  name: 'Smart TV Control - URemote',
+  alternateName: 'URemote',
   description: 'A local TV remote for iPhone and iPad, with LG webOS and Samsung Tizen support, QR setup sharing, and per-TV shortcuts. Compatibility varies by TV and firmware.',
   operatingSystem: 'iOS 26 or later; iPadOS 26 or later',
   applicationCategory: 'UtilitiesApplication',
@@ -35,7 +36,7 @@ const schema = {
     <link rel="icon" type="image/png" sizes="64x64" href={`${base}favicon.png`} />
     <link rel="sitemap" href={`${base}sitemap.xml`} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="URemote" />
+    <meta property="og:site_name" content="Smart TV Control - URemote" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -44,18 +45,18 @@ const schema = {
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Remote. A plain TV remote for iPhone and iPad." />
+    <meta property="og:image:alt" content="Smart TV Control - URemote. TV remote for iPhone and iPad." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={image} />
-    <meta name="twitter:image:alt" content="Remote. A plain TV remote for iPhone and iPad." />
+    <meta name="twitter:image:alt" content="Smart TV Control - URemote. TV remote for iPhone and iPad." />
     {applicationSchema && <script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g, '\\u003c')} />}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header shell">
-      <a class="wordmark" href={base} aria-label="URemote home">URemote<span aria-hidden="true">.</span></a>
+      <a class="wordmark" href={base} aria-label="Smart TV Control - URemote home">Smart TV Control - URemote</a>
       <nav aria-label="Main navigation">
         <a href={`${base}#features`}>Features</a>
         <a href={`${base}support/`} aria-current={Astro.url.pathname === `${base}support/` ? 'page' : undefined}>Support</a>
@@ -65,7 +66,7 @@ const schema = {
       <slot />
     </main>
     <footer class="site-footer shell">
-      <p>Remote. Keep it local.</p>
+      <p>Smart TV Control - URemote. Keep it local.</p>
       <nav aria-label="Footer navigation">
         <a href={`${base}privacy/`} aria-current={Astro.url.pathname === `${base}privacy/` ? 'page' : undefined}>Privacy</a>
         <a href={`${base}support/`}>Support</a>

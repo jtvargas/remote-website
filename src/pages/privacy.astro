@@ -2,26 +2,26 @@
 import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
 ---
-<Layout title="Privacy — URemote" description="How Remote stores TV settings and pairing credentials locally, handles optional camera and Photos access, and shares TV authorization through QR images.">
+<Layout title="Privacy — Smart TV Control - URemote" description="How URemote stores TV settings and pairing credentials locally, handles optional camera and Photos access, and shares TV authorization through QR images.">
   <article class="prose">
-    <p class="eyebrow">Remote</p>
+    <p class="eyebrow">Smart TV Control - URemote</p>
     <h1>Privacy, plainly.</h1>
-    <p class="lead">Remote works on your local network. No account, cloud relay, or analytics SDK.</p>
+    <p class="lead">Smart TV Control - URemote works on your local network. No account, cloud relay, or analytics SDK.</p>
 
     <h2>What stays on your device</h2>
     <p>TV names, identity and connection information, shortcuts, and app preferences are stored locally. Pairing credentials are kept in your device’s Keychain without iCloud synchronization. The app’s saved TV configuration is excluded from device backup.</p>
-    <p>Remote does not collect data for the developer or track you. It sends commands and pairing requests directly to TVs on your local network.</p>
+    <p>The app does not collect data for the developer or track you. It sends commands and pairing requests directly to TVs on your local network.</p>
 
     <h2>Permissions you choose</h2>
     <ul>
       <li><strong>Local Network:</strong> used to find, pair with, and control your TV.</li>
       <li><strong>Camera:</strong> requested when you choose to scan a setup QR.</li>
-      <li><strong>Photos:</strong> QR import gives Remote access only to the image you select, not your whole photo library.</li>
+      <li><strong>Photos:</strong> QR import gives the app access only to the image you select, not your whole photo library.</li>
     </ul>
 
     <h2>A shared QR is an access key</h2>
     <p>When you export a setup QR, you deliberately create a copy of TV configuration and any eligible pairing authorization outside the Keychain. The image can include TV identity, network addresses, settings, shortcuts, and preferences.</p>
-    <p><strong>The QR is not encrypted, is reusable, and has no automatic expiry.</strong> Anyone with a copy may be able to control the TV from its network. Share it only with trusted recipients. Remote cannot revoke distributed copies, and forgetting a TV in the app does not revoke them.</p>
+    <p><strong>The QR is not encrypted, is reusable, and has no automatic expiry.</strong> Anyone with a copy may be able to control the TV from its network. Share it only with trusted recipients. The app cannot revoke distributed copies, and forgetting a TV in the app does not revoke them.</p>
     <p>A TV-side authorization reset or firmware policy may invalidate the copied credentials. Some TVs will require approval again. If a QR has been shared unintentionally, review your TV’s connected-device permissions and remove the authorization there.</p>
 
     <h2>Optional diagnostics and sharing</h2>

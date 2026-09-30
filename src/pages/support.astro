@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
 ---
-<Layout title="Setup help & support — URemote" description="Help with Remote’s local TV setup, pairing, shared QR imports, and shortcuts. Check network access and TV compatibility, or report a problem safely.">
+<Layout title="Setup help & support — Smart TV Control - URemote" description="Help with URemote’s local TV setup, pairing, shared QR imports, and shortcuts. Check network access and TV compatibility, or report a problem safely.">
   <article class="prose">
-    <p class="eyebrow">Remote</p>
+    <p class="eyebrow">Smart TV Control - URemote</p>
     <h1>A little setup help.</h1>
     <p class="lead">Start here if your TV isn’t showing up or a control isn’t doing what you expect.</p>
 
@@ -18,11 +18,11 @@ const base = import.meta.env.BASE_URL;
     <p>Support varies by model and firmware. Not every LG or Samsung TV has been verified.</p>
 
     <h2>If discovery finds nothing</h2>
-    <p>Confirm that the TV is on, and check Remote’s Local Network permission in iOS Settings. Guest Wi-Fi and router client isolation can prevent devices from reaching one another even when their network names look right.</p>
+    <p>Confirm that the TV is on, and check URemote’s Local Network permission in iOS Settings. Guest Wi-Fi and router client isolation can prevent devices from reaching one another even when their network names look right.</p>
     <p>Give discovery up to 45 seconds. If the TV still does not appear, choose <strong>Enter an IP address</strong> in the TV picker and use the TV’s current local address. Do not post that address in a public issue.</p>
 
     <h2>If pairing or a shared setup is rejected</h2>
-    <p>Look for an approval prompt on the TV. A shared QR may reuse existing authorization, but the TV can require approval again. Use Remote’s explicit re-pair option in TV settings if the TV has rejected its saved authorization.</p>
+    <p>Look for an approval prompt on the TV. A shared QR may reuse existing authorization, but the TV can require approval again. Use the explicit re-pair option in TV settings if the TV has rejected its saved authorization.</p>
     <p>To import a setup, choose <strong>Add a TV → Scan QR Code</strong>, then use the camera or select a saved image from Photos. Review the setup before adding it. An offline setup can be saved for later.</p>
 
     <h2>If a button or shortcut is missing</h2>
@@ -32,11 +32,11 @@ const base = import.meta.env.BASE_URL;
     <p>Save the TV’s active Wi-Fi or Ethernet MAC address in TV settings and enable its network-standby or Mobile TV On option. Wake depends on the TV and router delivering local network traffic while the TV is in standby. Deep standby or a changed address can prevent it; wake is not guaranteed.</p>
 
     <h2>Report a problem</h2>
-    <p>Use the <a href="https://github.com/jtvargas/remote-website/issues">Remote support issue tracker on GitHub</a>. A GitHub account is required to open an issue, but not to use Remote.</p>
+    <p>Use the <a href="https://github.com/jtvargas/remote-website/issues">Smart TV Control - URemote support issue tracker on GitHub</a>. A GitHub account is required to open an issue, but not to use the app.</p>
     <p>Include your app version, iOS or iPadOS version, TV brand, the steps you took, and what you expected to happen. Share only non-identifying details needed to explain the problem.</p>
     <div class="notice">
       <p><strong>Issues are public.</strong> Never post a setup QR, pairing key, token, TV name, serial number, IP or MAC address, Wi-Fi name, or diagnostics containing identifiers. Review screenshots and diagnostic reports before attaching them. If you cannot remove sensitive information, leave the attachment out.</p>
     </div>
-    <p>Read <a href={`${base}privacy/`}>how Remote handles your data</a> before sharing a setup or a diagnostic report.</p>
+    <p>Read <a href={`${base}privacy/`}>how the app handles your data</a> before sharing a setup or a diagnostic report.</p>
   </article>
 </Layout>

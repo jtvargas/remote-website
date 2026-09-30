@@ -1,6 +1,6 @@
-# URemote website
+# Smart TV Control - URemote website
 
-The public, static website for Remote, a local TV remote for iPhone and iPad. This repository contains only website code and approved public artwork. The iOS app source remains in its separate private repository.
+The public, static website for Smart TV Control - URemote, a local TV remote for iPhone and iPad displayed as URemote on your device. This repository contains only website code and approved public artwork. The iOS app source remains in its separate private repository.
 
 Live URL: <https://jtvargas.github.io/remote-website/>
 

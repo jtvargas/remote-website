@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <Layout
-  title="URemote — TV remote for iPhone and iPad"
+  title="Smart TV Control - URemote"
   description="A local TV remote for iPhone and iPad. Set up an LG webOS or Samsung Tizen TV, share access by QR, and choose your shortcuts. Requires iOS 26 or later."
   applicationSchema
 >
@@ -19,7 +19,7 @@ const base = import.meta.env.BASE_URL;
     <p class="availability">Not yet available on the App Store. No release date has been announced.</p>
     </div>
     <figure class="hero-screen">
-      <img src={`${base}images/remote.png`} width="1320" height="2868" alt="Remote’s TV controls with a directional pad, volume, playback, and assigned shortcuts." fetchpriority="high" decoding="async" />
+      <img src={`${base}images/remote.png`} width="1320" height="2868" alt="TV controls with a directional pad, volume, playback, and assigned shortcuts." fetchpriority="high" decoding="async" />
       <figcaption>Everyday controls, together.</figcaption>
     </figure>
   </section>
@@ -37,7 +37,7 @@ const base = import.meta.env.BASE_URL;
           <p>Join your TV’s local network, allow Local Network access, and find your TV. Approve the first pairing on the TV.</p>
         </div>
         <figure>
-          <img src={`${base}images/setup.png`} width="1320" height="2868" alt="Remote’s Add a TV screen with options to find nearby TVs or scan a QR code." loading="lazy" decoding="async" />
+          <img src={`${base}images/setup.png`} width="1320" height="2868" alt="The Add a TV screen with options to find nearby TVs or scan a QR code." loading="lazy" decoding="async" />
           <figcaption>Find a TV on your network.</figcaption>
         </figure>
       </article>
@@ -48,7 +48,7 @@ const base = import.meta.env.BASE_URL;
           <p>Share a saved setup by QR with someone you trust. They can scan it or import the image. The TV may still ask for approval.</p>
         </div>
         <figure>
-          <img src={`${base}images/sharing.png`} width="1320" height="2868" alt="Remote’s Scan QR Code screen with camera and saved-image import options." loading="lazy" decoding="async" />
+          <img src={`${base}images/sharing.png`} width="1320" height="2868" alt="The Scan QR Code screen with camera and saved-image import options." loading="lazy" decoding="async" />
           <figcaption>A shared setup, without an account.</figcaption>
         </figure>
       </article>
@@ -59,7 +59,7 @@ const base = import.meta.env.BASE_URL;
           <p>Six shortcut slots for each TV. Pick apps, controls, or volume presets where supported. Choose button names and haptics, too.</p>
         </div>
         <figure>
-          <img src={`${base}images/customize.png`} width="1320" height="2868" alt="Remote’s shortcut editor with choices for a TV’s shortcut slots." loading="lazy" decoding="async" />
+          <img src={`${base}images/customize.png`} width="1320" height="2868" alt="The shortcut editor with choices for a TV’s shortcut slots." loading="lazy" decoding="async" />
           <figcaption>Choose apps, controls, or volume presets.</figcaption>
         </figure>
       </article>
@@ -71,9 +71,9 @@ const base = import.meta.env.BASE_URL;
     <div>
       <p class="eyebrow">Before you begin</p>
       <h2 id="compatibility-title">Local by design.</h2>
-      <p>Remote talks directly to your TV. No account, cloud relay, or home server is needed.</p>
+      <p>Smart TV Control - URemote talks directly to your TV. No account, cloud relay, or home server is needed.</p>
       <figure class="library-screen">
-        <img src={`${base}images/library.png`} width="1320" height="2868" alt="Remote’s TV library showing several sample TV cards and an Add a TV option." loading="lazy" decoding="async" />
+        <img src={`${base}images/library.png`} width="1320" height="2868" alt="The TV library showing several sample TV cards and an Add a TV option." loading="lazy" decoding="async" />
         <figcaption>A place for each TV.</figcaption>
       </figure>
     </div>
@@ -87,7 +87,7 @@ const base = import.meta.env.BASE_URL;
   <aside class="privacy-note" aria-labelledby="sharing-title">
     <h2 id="sharing-title">Share a QR like you would share a key.</h2>
     <p>A setup QR can contain reusable TV authorization. It is not encrypted. Anyone with a copy may control that TV from its network, so share only with trusted people. Deleting a saved remote does not revoke a shared copy.</p>
-    <a href={`${base}privacy/`}>How Remote handles your data <span aria-hidden="true">→</span></a>
+    <a href={`${base}privacy/`}>How the app handles your data <span aria-hidden="true">→</span></a>
   </aside>
 
   <section class="closing" aria-labelledby="help-title">
