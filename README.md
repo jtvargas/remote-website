@@ -36,7 +36,7 @@ The sitemap is `/remote-website/sitemap.xml`. The project also serves `/remote-w
 - `/remote-website/privacy/`: local storage, Keychain, permissions, QR exports, optional diagnostics, and hosting privacy.
 - `/remote-website/support/`: practical setup help and the [public support tracker](https://github.com/jtvargas/remote-website/issues). Keep repository issues enabled.
 
-The shared layout provides unique titles/descriptions, canonical URLs, Open Graph, and Twitter image metadata. The homepage includes factual `SoftwareApplication` JSON-LD without price, ratings, release date, or a download URL. The site intentionally has no App Store badge or download link until a real listing exists. Once published, update the availability copy and link to the actual listing; do not imply universal TV compatibility.
+The shared layout provides unique titles/descriptions, canonical URLs, Open Graph, and Twitter image metadata. The homepage includes factual `SoftwareApplication` JSON-LD without price, ratings, release date, or a download URL. The site intentionally has no App Store badge or download link until a real listing exists. The current availability copy reads "TestFlight available per request." Once published, link to the actual listing; do not imply universal TV compatibility.
 
 ## Public artwork
 
