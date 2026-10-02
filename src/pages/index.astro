@@ -3,22 +3,22 @@ import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
 ---
 <Layout
-  title="Smart TV Control - URemote"
-  description="A local TV remote for iPhone and iPad. Set up an LG webOS or Samsung Tizen TV, share access by QR, and choose your shortcuts. Requires iOS 26 or later."
+  title="Smart TV Control - URemote — a local TV remote for iPhone and iPad"
+  description="A local TV remote for iPhone and iPad. Control an LG webOS, Samsung Tizen, or Android/Google TV over Wi-Fi — find the TV, type in the 6-digit pairing code, share setups by QR, and set up shortcuts. Requires iOS 26 or later."
   applicationSchema
 >
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-content">
-    <p class="eyebrow">For iPhone &amp; iPad</p>
-    <h1 id="hero-title">Your TV remote.<br /><span>On iPhone and iPad.</span></h1>
-    <p class="hero-copy">Control a compatible LG or Samsung TV over Wi-Fi. Share its setup by QR and choose shortcuts for the buttons you use most.</p>
-    <div class="hero-links">
-      <a class="button" href="#features">Take a look <span aria-hidden="true">↓</span></a>
-      <a href="#compatibility">Will it work with my TV?</a>
+      <p class="eyebrow load-rise" style="--i: 0">For iPhone &amp; iPad</p>
+      <h1 id="hero-title" class="load-rise" style="--i: 1">Your TV remote.<br /><span>On iPhone and iPad.</span></h1>
+      <p class="hero-copy load-rise" style="--i: 2">Control a compatible LG, Samsung, or Android/Google TV over your own Wi-Fi. Find the TV, enter the code it shows you, and take control. No account, no cloud, nothing in between.</p>
+      <div class="hero-links load-rise" style="--i: 3">
+        <a class="button" href="#features">Take a look <span aria-hidden="true">↓</span></a>
+        <a href="#compatibility">Will it work with my TV?</a>
+      </div>
+      <p class="availability load-rise" style="--i: 4">TestFlight available per request.</p>
     </div>
-    <p class="availability">Not yet available on the App Store. No release date has been announced.</p>
-    </div>
-    <figure class="hero-screen">
+    <figure class="hero-screen load-rise" style="--i: 2">
       <img src={`${base}images/remote.png`} width="1320" height="2868" alt="TV controls with a directional pad, volume, playback, and assigned shortcuts." fetchpriority="high" decoding="async" />
       <figcaption>Everyday controls, together.</figcaption>
     </figure>
@@ -26,15 +26,15 @@ const base = import.meta.env.BASE_URL;
 
   <section id="features" class="features" aria-labelledby="features-title">
     <div class="section-heading">
-      <p class="eyebrow">Setup, sharing, and shortcuts</p>
-      <h2 id="features-title">Set up. Share. Make it yours.</h2>
+      <p class="eyebrow">Setup, pairing, sharing, shortcuts</p>
+      <h2 id="features-title">Set up. Pair. Share. Make it yours.</h2>
     </div>
     <div class="feature-grid">
       <article class="feature">
         <div class="feature-copy">
-          <span class="feature-number" aria-hidden="true">01</span>
-          <h3>A simple start.</h3>
-          <p>Join your TV’s local network, allow Local Network access, and find your TV. Approve the first pairing on the TV.</p>
+          <span class="feature-number" aria-hidden="true">1</span>
+          <h3>Find your TV.</h3>
+          <p>Join your TV&rsquo;s local network, allow Local Network access, and pick your TV from the list. Approve the first pairing on the TV itself.</p>
         </div>
         <figure>
           <img src={`${base}images/setup.png`} width="1320" height="2868" alt="The Add a TV screen with options to find nearby TVs or scan a QR code." loading="lazy" decoding="async" />
@@ -43,9 +43,20 @@ const base = import.meta.env.BASE_URL;
       </article>
       <article class="feature">
         <div class="feature-copy">
-          <span class="feature-number" aria-hidden="true">02</span>
+          <span class="feature-number" aria-hidden="true">2</span>
+          <h3>Type in the code.</h3>
+          <p>Some TVs pair with a six-digit code instead of a prompt. Your TV shows the code; you type it into six boxes that fill as you go. Wrong code? The boxes shake, clear, and you try again.</p>
+        </div>
+        <figure>
+          <img src={`${base}images/pairing.png`} width="1206" height="2622" alt="The pairing screen with six rounded boxes for entering the 6-digit code shown on the TV." loading="lazy" decoding="async" />
+          <figcaption>Six boxes, one code.</figcaption>
+        </figure>
+      </article>
+      <article class="feature">
+        <div class="feature-copy">
+          <span class="feature-number" aria-hidden="true">3</span>
           <h3>Pass the remote.</h3>
-          <p>Share a saved setup by QR with someone you trust. They can scan it or import the image. The TV may still ask for approval.</p>
+          <p>Share a saved setup by QR with someone you trust. They scan it or import the image &mdash; &ldquo;Point the camera at a QR code shared with you.&rdquo; The TV may still ask for approval.</p>
         </div>
         <figure>
           <img src={`${base}images/sharing.png`} width="1320" height="2868" alt="The Scan QR Code screen with camera and saved-image import options." loading="lazy" decoding="async" />
@@ -54,12 +65,12 @@ const base = import.meta.env.BASE_URL;
       </article>
       <article class="feature">
         <div class="feature-copy">
-          <span class="feature-number" aria-hidden="true">03</span>
+          <span class="feature-number" aria-hidden="true">4</span>
           <h3>Your usual buttons.</h3>
-          <p>Six shortcut slots for each TV. Pick apps, controls, or volume presets where supported. Choose button names and haptics, too.</p>
+          <p>Six shortcut slots for each TV. Assign apps, controls, or volume presets where your TV supports them, with your own names and haptics.</p>
         </div>
         <figure>
-          <img src={`${base}images/customize.png`} width="1320" height="2868" alt="The shortcut editor with choices for a TV’s shortcut slots." loading="lazy" decoding="async" />
+          <img src={`${base}images/customize.png`} width="1320" height="2868" alt="The shortcut editor with choices for a TV&rsquo;s shortcut slots." loading="lazy" decoding="async" />
           <figcaption>Choose apps, controls, or volume presets.</figcaption>
         </figure>
       </article>
@@ -79,7 +90,7 @@ const base = import.meta.env.BASE_URL;
     </div>
     <dl class="requirements">
       <div><dt>Your device</dt><dd>iPhone with iOS 26 or later, or iPad with iPadOS 26 or later.</dd></div>
-      <div><dt>Your TV</dt><dd>LG webOS or Samsung Tizen. Compatibility and available controls vary by model and firmware; not every TV has been verified.</dd></div>
+      <div><dt>Your TV</dt><dd>LG webOS, Samsung Tizen, or Android/Google TV. Compatibility and available controls vary by model and firmware; not every TV has been verified.</dd></div>
       <div><dt>Your network</dt><dd>Your device and TV must be on the same local network. Your device uses Wi-Fi; the TV can use Wi-Fi or Ethernet. Allow Local Network access and approve initial pairing on the TV.</dd></div>
     </dl>
   </section>

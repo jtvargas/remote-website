@@ -36,23 +36,24 @@ The sitemap is `/remote-website/sitemap.xml`. The project also serves `/remote-w
 - `/remote-website/privacy/`: local storage, Keychain, permissions, QR exports, optional diagnostics, and hosting privacy.
 - `/remote-website/support/`: practical setup help and the [public support tracker](https://github.com/jtvargas/remote-website/issues). Keep repository issues enabled.
 
-The shared layout provides unique titles/descriptions, canonical URLs, Open Graph, and Twitter image metadata. The homepage includes factual `SoftwareApplication` JSON-LD without price, ratings, release date, or a download URL. The site intentionally has no App Store badge or download link until a real listing exists. Once published, update the availability copy and link to the actual listing; do not imply universal TV compatibility.
+The shared layout provides unique titles/descriptions, canonical URLs, Open Graph, and Twitter image metadata. The homepage includes factual `SoftwareApplication` JSON-LD without price, ratings, release date, or a download URL. The site intentionally has no App Store badge or download link until a real listing exists. The current availability copy reads "TestFlight available per request." Once published, link to the actual listing; do not imply universal TV compatibility.
 
 ## Public artwork
 
 `public/favicon.png` is a 64 × 64 PNG resized directly from the iOS app’s `AppIcon.png`: the angled silver handset on graphite, with a charcoal navigation pad, two three-button rows, and a horizontal volume key. `public/social.png` is a 1200 × 630 typography-only social card; no TV identifiers or access material are present.
 
-The homepage expects these **1320 × 2868** PNGs in `public/images/`:
+The homepage expects these PNGs in `public/images/`, at **1320 × 2868** unless noted:
 
 - `remote.png`: a populated remote, used in the hero.
 - `setup.png`: the Add a TV choices.
+- `pairing.png`: the 6-digit PIN-code pairing screen (1206 × 2622, iPhone 17 simulator).
 - `sharing.png`: safe receiving/import UI, without a valid access QR.
 - `customize.png`: the per-TV shortcut editor.
 - `library.png`: the library with several sample TV cards.
 
 These are genuine iOS simulator screenshots, with temporary sample TV data authorized only for capture, not fabricated phone UI. Use a 9:41 status bar and full battery. A visible caption identifies sample TVs. Never ship the temporary simulator data or injection code in the app or this website repository. Screenshot HTML includes intrinsic dimensions, descriptive alt text, and lazy loading except for the hero. If captures change, update dimensions and alt text to match their actual contents.
 
-Capture status was set with `xcrun simctl status_bar booted override --time "9:41" --batteryState charged --batteryLevel 100`. All five images were captured from an iPhone 17 Pro Max simulator at 1320 × 2868. The isolated sample app was uninstalled and its temporary source/build directory removed after capture; no real TV pairing was used.
+Capture status was set with `xcrun simctl status_bar booted override --time "9:41" --batteryState charged --batteryLevel 100`. The original five images were captured from an iPhone 17 Pro Max simulator at 1320 × 2868. `pairing.png` was captured separately from an iPhone 17 simulator at 1206 × 2622; its status bar shows the live time rather than the 9:41 convention. The pairing screen shows empty code boxes — no pairing code, TV name, network address, or other sensitive data is visible. The isolated sample app was uninstalled and its temporary source/build directory removed after capture; no real TV pairing was used.
 
 Before publication, visually inspect every image. No real access QR, pairing credential, personally identifying TV name, network address, diagnostic identifier, or other sensitive data may appear. Review all files being published; never copy the private app repository or its build output into this repository.
 

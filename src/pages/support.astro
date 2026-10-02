@@ -2,34 +2,35 @@
 import Layout from '../layouts/Layout.astro';
 const base = import.meta.env.BASE_URL;
 ---
-<Layout title="Setup help & support — Smart TV Control - URemote" description="Help with URemote’s local TV setup, pairing, shared QR imports, and shortcuts. Check network access and TV compatibility, or report a problem safely.">
+<Layout title="Setup help & support — Smart TV Control - URemote" description="Help with URemote's local TV setup — LG webOS, Samsung Tizen, and Android/Google TV pairing — plus shared QR imports and shortcuts. Check network access and TV compatibility, or report a problem safely.">
   <article class="prose">
     <p class="eyebrow">Smart TV Control - URemote</p>
     <h1>A little setup help.</h1>
-    <p class="lead">Start here if your TV isn’t showing up or a control isn’t doing what you expect.</p>
+    <p class="lead">Start here if your TV isn&rsquo;t showing up or a control isn&rsquo;t doing what you expect.</p>
 
     <h2>Connect for the first time</h2>
     <ol>
-      <li>Turn on an LG webOS or Samsung Tizen TV. Use an iPhone with iOS 26 or later, or an iPad with iPadOS 26 or later.</li>
+      <li>Turn on an LG webOS, Samsung Tizen, or Android/Google TV. Use an iPhone with iOS 26 or later, or an iPad with iPadOS 26 or later.</li>
       <li>Connect your device to the same local network as the TV. A wired Ethernet connection for the TV is fine.</li>
       <li>Open <strong>Add a TV</strong>, allow Local Network access, then choose <strong>Find a nearby TV</strong>.</li>
-      <li>Select the TV and approve the request on its screen.</li>
+      <li>Select the TV and approve the request on its screen. Some TVs &mdash; typically Android or Google TV &mdash; show a 6-digit pairing code instead: type it into the six boxes. They fill as you type, and you can paste a code, too.</li>
     </ol>
-    <p>Support varies by model and firmware. Not every LG or Samsung TV has been verified.</p>
+    <p>Support varies by model and firmware. Not every LG, Samsung, or Android/Google TV has been verified.</p>
 
     <h2>If discovery finds nothing</h2>
-    <p>Confirm that the TV is on, and check URemote’s Local Network permission in iOS Settings. Guest Wi-Fi and router client isolation can prevent devices from reaching one another even when their network names look right.</p>
-    <p>Give discovery up to 45 seconds. If the TV still does not appear, choose <strong>Enter an IP address</strong> in the TV picker and use the TV’s current local address. Do not post that address in a public issue.</p>
+    <p>Confirm that the TV is on, and check URemote&rsquo;s Local Network permission in iOS Settings. Guest Wi-Fi and router client isolation can prevent devices from reaching one another even when their network names look right.</p>
+    <p>Give discovery up to 45 seconds. If the TV still does not appear, choose <strong>Enter an IP address</strong> in the TV picker and use the TV&rsquo;s current local address. Do not post that address in a public issue.</p>
 
     <h2>If pairing or a shared setup is rejected</h2>
     <p>Look for an approval prompt on the TV. A shared QR may reuse existing authorization, but the TV can require approval again. Use the explicit re-pair option in TV settings if the TV has rejected its saved authorization.</p>
+    <p>If you typed a pairing code and it was wrong, the boxes shake and clear so you can try again. Codes expire after a couple of minutes &mdash; ask the TV for a fresh one and type it in promptly.</p>
     <p>To import a setup, choose <strong>Add a TV → Scan QR Code</strong>, then use the camera or select a saved image from Photos. Review the setup before adding it. An offline setup can be saved for later.</p>
 
     <h2>If a button or shortcut is missing</h2>
     <p>Apps, inputs, extra controls, and volume presets depend on the capabilities reported by your TV. Each TV has six shortcut slots: tap an empty slot to assign one, or touch and hold an assigned slot to replace or remove it. The <strong>Aa</strong> control shows or hides button names.</p>
 
     <h2>If the TV will not wake</h2>
-    <p>Save the TV’s active Wi-Fi or Ethernet MAC address in TV settings and enable its network-standby or Mobile TV On option. Wake depends on the TV and router delivering local network traffic while the TV is in standby. Deep standby or a changed address can prevent it; wake is not guaranteed.</p>
+    <p>Save the TV&rsquo;s active Wi-Fi or Ethernet MAC address in TV settings and enable its network-standby or Mobile TV On option. Wake depends on the TV and router delivering local network traffic while the TV is in standby. Deep standby or a changed address can prevent it; wake is not guaranteed.</p>
 
     <h2>Report a problem</h2>
     <p>Use the <a href="https://github.com/jtvargas/remote-website/issues">Smart TV Control - URemote support issue tracker on GitHub</a>. A GitHub account is required to open an issue, but not to use the app.</p>
